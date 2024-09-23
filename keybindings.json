@@ -1,0 +1,26 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+g ctrl+g",
+        "command": "git-graph.view",
+        "when": "config.git-graph.sourceCodeProviderIntegrationLocation == 'Inline' && scmProvider == 'git'"
+    },
+    {
+        "key": "ctrl+g ctrl+b",
+        "command": "git.branch"
+    },
+    {
+        "key": "ctrl+g ctrl+c",
+        "command": "git.checkout"
+    },
+    {
+        "key": "alt+enter",
+        "command": "editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+oem_period",
+        "command": "-editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+    }
+]
